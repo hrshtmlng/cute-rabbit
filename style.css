@@ -1,0 +1,134 @@
+body {
+    background: #FFC5DB;
+    overflow-x: hidden;
+    transition: 0.4s linear;
+    margin: 0;
+}
+
+#gridbox {
+    display: grid;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+}
+
+svg {
+    width: 90vw;
+    height: 85vh;
+}
+
+#left_ear {
+    animation: left 2s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+#right_ear {
+    animation: right 2s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes left {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-0.5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(0.5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(0.5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-0.5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rabbit {
+    background: #5A5F5B;
+    transition: 0.4s linear;
+}
+
+.rabbit #left_ear,
+.rabbit #right_ear {
+    fill: url(#white);
+    stroke: url(#white);
+}
+
+.rabbit .ear {
+    fill: url(#pink);
+    stroke: #F397B9;
+}
+
+.rabbit .pink {
+    fill: url(#pink);
+}
+
+.rabbit .face {
+    fill: url(#face);
+    stroke: none;
+}
+
+.rabbit .white {
+    fill: url(#white);
+    stroke: none;
+}
+.rabbit .hand {
+    fill: url(#hands);
+    stroke: url(#white);
+    stroke-width: 1;
+}
+
+.rabbit .leafs {
+    fill: url(#leafs);
+    stroke: none;
+}
+
+.rabbit .carrot {
+    fill: url(#carrot);
+    stroke: none;
+}
+
+.rabbit .lines {
+    stroke: url(#lines);
+}
+
+.rabbit .shadow {
+    fill: url(#shadow);
+}
+
+#name {
+    padding: 10px 20px;
+    border-left: solid 4px #668ad8;
+    border-right: solid 4px #668ad8;
+    color: #668ad8;
+    background: #e1f3ff;
+    font-family: 'Quicksand', sans-serif;
+}
