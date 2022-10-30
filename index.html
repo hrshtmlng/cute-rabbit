@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>🐰 Cute Rabbit 🐰</title>
+   <link rel="stylesheet" href="/rabbit/rabbit.css">
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+   <script>
+      alert("Click on rabbit button to change 🐰");
+      function rabbit() {
+         document.body.classList.toggle("rabbit");
+      }
+   </script>
+</head>
+
+<body class="rabbit" onload="document.body.classList.toggle('rabbit');">
+   <div id="gridbox">
+      <svg viewBox="0 0 300 500">
+
+         <!--🎨 defining color gradients 🎨-->
+         <defs>
+
+            <linearGradient id="pink" x1="0%" y1="0%" x2="0%" y2="100%">
+               <stop offset="0%" stop-color="#F4A7C1" />
+               <stop offset="100%" stop-color="#F9699C" />
+            </linearGradient>
+
+            <linearGradient id="white" x1="0%" y1="0%" x2="0%" y2="100%">
+               <stop offset="0%" stop-color="#F9F2FA" />
+               <stop offset="100%" stop-color="#CFA9C0" />
+            </linearGradient>
+
+            <linearGradient id="face" x1="0%" y1="0%" x2="0%" y2="100%">
+               <stop offset="0%" stop-color="#F7EDF6" />
+               <stop offset="100%" stop-color="#D8B8CD" />
+            </linearGradient>
+
+            <linearGradient id="hands" x1="0%" y1="0%" x2="0%" y2="100%">
+               <stop offset="15%" stop-color="#F0E0EB" />
+               <stop offset="100%" stop-color="#D8B8CD" />
+            </linearGradient>
+
+            <radialGradient id="leafs" cx="50%" cy="70%" r="90%" fx="0%" fy="50%">
+               <stop offset="50%" stop-color="#5B9A19" />
+               <stop offset="100%" stop-color="#DDFC74" />
+            </radialGradient>
+
+            <radialGradient id="carrot" cx="50%" cy="70%" r="90%" fx="0%" fy="50%">
+               <stop offset="50%" stop-color="#FE7122" />
+               <stop offset="100%" stop-color="#FBFD41" />
+            </radialGradient>
+
+            <linearGradient id="lines" x1="0%" y1="0%" x2="0%" y2="100%">
+               <stop offset="0%" stop-color="#FE7122" />
+               <stop offset="100%" stop-color="#D24A16" />
+            </linearGradient>
+
+            <radialGradient id="shadow">
+               <stop offset="0%" stop-color="#21212B" />
+               <stop offset="100%" stop-color="#5A5F5B" />
+            </radialGradient>
+
+         </defs>
+
+         <!--👥 Shadow 👥-->
+         <ellipse cx="150" cy="470" rx="110" ry="25" fill="#E5A8C5" class="shadow" />
+
+         <g stroke="#51073E" stroke-width="4" fill="#FFFFFC" stroke-linecap="round" stroke-linejoin="round" id="container">
+
+            <!--👂 Ears 👂-->
+            <g id="left_ear">
+               <path d="M110,103 C100,50 70,0 31,20 C-10,40 24,100 60,130" />
+               <path d="M97.5,109.5 C90,80 70,40 50,54 C28,64 50,103 72.5,123" fill="#FFB7CB" stroke="none" stroke-width="3" class="ear" />
+            </g>
+
+            <g id="right_ear">
+               <path d="M190,103 C200,50 230,0 269,20 C310,40 276,100 240,130" />
+               <path d="M202.5,109.5 C210,80 230,40 250,54 C272,64 250,103 227.5,123" fill="#FFB7CB" stroke="none" stroke-width="3" class="ear" />
+            </g>
+            <!--🐇 Body 🐇-->
+            <ellipse cx="150" cy="350" rx="100" ry="120" class="white" />
+            <g stroke="none" stroke-width="0">
+               <ellipse cx="150" cy="380" rx="60" ry="75" fill="#FFB7CB" class="pink" />
+
+               <!--🐰 Face 🐰-->
+               <path d="M40,210 C10,60 290,60 260,210 C300,320 0,320 40,210" stroke="#51073E" stroke-width="4" class="face" />
+
+               <circle cx="95" cy="210" r="15" fill="#57074E" />
+               <ellipse cx="80" cy="235" rx="12" ry="5" fill="#FFB7CB" class="pink" />
+
+               <circle cx="205" cy="210" r="15" fill="#57074E" />
+               <ellipse cx="220" cy="235" rx="12" ry="5" fill="#FFB7CB" class="pink" />
+
+               <path d="M142,234 C159,240 141,240 158,234 C158,227.5 142,227.5 142,234" fill="#FE6A9C" />
+
+               <path d="M140,246 Q145,253.5 150,246 Q155,253.5 160,246 C160,254 152,254 150,249 C148,254 140,254 140,246" fill="#57074E" />
+
+               <!--👀 Eye Shine 👀-->
+               <g fill="#fff">
+                  <circle cx="100" cy="205" r="4" />
+                  <circle cx="105" cy="211" r="2" />
+
+                  <circle cx="210" cy="205" r="4" />
+                  <circle cx="215" cy="211" r="2" />
+               </g>
+            </g>
+
+            <!--🥕 carrot 🥕-->
+            <g fill="#70E000" class="leafs">
+               <ellipse cx="150" cy="305" rx="6" ry="12" transform="rotate(45 150 317)" />
+               <ellipse cx="150" cy="305" rx="6" ry="12" transform="rotate(-45 150 317)" />
+               <ellipse cx="150" cy="305" rx="6" ry="12" />
+            </g>
+
+            <path d="M150,310 C200,310 155,410 150,410 C145,410 100,310 150,310" fill="#FF9708" class="carrot" />
+
+            <g class="lines">
+               <polyline points="130,330.001 145,330" />
+               <polyline points="168,350.001 155,350" />
+               <polyline points="140,385.001 145,385" />
+            </g>
+
+            <!--👐 hands 👐-->
+            <path d="M69.5,279 C-20,380 220,400 100,325" class="hand" />
+            <path d="M230.5,279 C320,380 80,400 200,325" class="hand" />
+
+            <!--🐾 foots 🐾-->
+            <ellipse cx="100" cy="465" rx="30" ry="20" class="white" />
+            <ellipse cx="200" cy="465" rx="30" ry="20" class="white" />
+         </g>
+      </svg>
+
+      <h3 style="text-align: center"><span id="name" onclick="rabbit()">Rabbit</span></h3>
+
+   </div>
+</body>
+
+</html>
